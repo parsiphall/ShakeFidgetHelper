@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_unlocks"
+                android:icon="@drawable/ic_lock_open_black_24dp"
+                android:title="@string/nav_unlocks"/>
+        <item
+                android:id="@+id/nav_quest"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="@string/nav_quests"/>
+        <item
+                android:id="@+id/nav_weapon"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="@string/nav_weapon"/>
+        <item
+                android:id="@+id/nav_dungeon"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="@string/nav_dungeon"/>
+        <item
+                android:id="@+id/nav_citadel"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/nav_citadel"/>
+        <item
+                android:id="@+id/nav_mirror"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_mirror"/>
+        <item
+                android:id="@+id/nav_pets"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/nav_pets"/>
+    </group>
+
+</menu>
