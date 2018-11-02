@@ -31,9 +31,24 @@ class QuestFragment : Fragment() {
     }
 
     private fun calculate() {
-        val time1 = quest_q1_time_m.text.toString().toInt() * 60 + quest_q1_time_s.text.toString().toInt()
-        val time2 = quest_q2_time_m.text.toString().toInt() * 60 + quest_q2_time_s.text.toString().toInt()
-        val time3 = quest_q3_time_m.text.toString().toInt() * 60 + quest_q3_time_s.text.toString().toInt()
+        val time1s: Int = if (quest_q1_time_s.text.toString() == "") {
+            0
+        } else {
+            quest_q1_time_s.text.toString().toInt()
+        }
+        val time2s: Int = if (quest_q2_time_s.text.toString() == "") {
+            0
+        } else {
+            quest_q2_time_s.text.toString().toInt()
+        }
+        val time3s: Int = if (quest_q3_time_s.text.toString() == "") {
+            0
+        } else {
+            quest_q3_time_s.text.toString().toInt()
+        }
+        val time1 = quest_q1_time_m.text.toString().toInt() * 60 + time1s
+        val time2 = quest_q2_time_m.text.toString().toInt() * 60 + time2s
+        val time3 = quest_q3_time_m.text.toString().toInt() * 60 + time3s
         val gold1 = quest_q1_gold_g.text.toString().toInt() * 100 + quest_q1_gold_s.text.toString().toInt()
         val gold2 = quest_q2_gold_g.text.toString().toInt() * 100 + quest_q2_gold_s.text.toString().toInt()
         val gold3 = quest_q3_gold_g.text.toString().toInt() * 100 + quest_q3_gold_s.text.toString().toInt()
