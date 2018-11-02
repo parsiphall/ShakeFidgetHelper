@@ -31,7 +31,8 @@
                 style="@style/questText"
                 android:text="@string/quest_time_text_view" />
 
-            <TextView style="@style/questText" />
+            <TextView style="@style/questText"
+                android:text="@string/quest_best_for"/>
         </LinearLayout>
 
         <LinearLayout
@@ -277,7 +278,7 @@
             android:text="@string/quest_button" />
 
         <Button
-            android:id="@+id/clear_button"
+            android:id="@+id/quest_clear_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/quest_clear" />
