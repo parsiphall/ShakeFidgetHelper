@@ -87,5 +87,35 @@
     <string name="weapon_1">Оружие 1</string>
     <string name="weapon_2">Оружие 2</string>
     <string name="weapon_damage">Урон</string>
+    <!-- dungeon -->
+    <string name="dungeon_1">Подземелье 1: Осквернённое подземелье</string>
+    <string name="dungeon_2">Подземелье 2: Рудники славы</string>
+    <string name="dungeon_3">Подземелье 3: Руины Гнарка</string>
+    <string name="dungeon_4">Подземелье 4: Грот головорезов</string>
+    <string name="dungeon_5">Подземелье 5: Алтарь изумрудной чешуи</string>
+    <string name="dungeon_6">Подземелье 6: Больное дерево</string>
+    <string name="dungeon_7">Подземелье 7: Поток магмы</string>
+    <string name="dungeon_8">Подземелье 8: Храм ледяной крови</string>
+    <string name="dungeon_9">Подземелье 9: Пирамида безумия</string>
+    <string name="dungeon_10">Подземелье 10: Крепость Чёрного черепа</string>
+    <string name="dungeon_11">Подземелье 11: Цирк ужасов</string>
+    <string name="dungeon_12">Подземелье 12: Ад</string>
+    <string name="dungeon_13">Подземелье 13: 13-ый этаж</string>
+    <string name="dungeon_14">Подземелье 14: Истерос</string>
+    <string name="dungeon_15">Подземелье 15: Башня?</string>
+    <string name="dungeon_16">Подземелье 16: Респектабельная школа магии</string>
+    <string name="dungeon_17">Подземелье 17: Портал демонов?</string>
+    <string name="dungeon_stage_number">Этаж: {0}</string>
+    <string name="dungeon_enemy_name">Имя: {0}</string>
+    <string name="dungeon_level">Уровень: {0}</string>
+    <string name="dungeon_class">Класс: {0}</string>
+    <string name="dungeon_health">Здоровье: {0}</string>
+    <string name="dungeon_strength">Сила: {0}</string>
+    <string name="dungeon_agility">Ловкость: {0}</string>
+    <string name="dungeon_intellegence">Ум: {0}</string>
+    <string name="dungeon_vitality">Выносливость: {0}</string>
+    <string name="dungeon_luck">Удача: {0}</string>
+    <string name="dungeon_experience">Опыт: {0}</string>
+
 
 </resources>
