@@ -74,6 +74,18 @@
     <string name="quest_gold_g">\nЗ</string>
     <string name="quest_gold_s">\nС</string>
     <string name="quest_clear">Очистить</string>
+    <string name="quest_best_for">\nЛучше для:</string>
+    <string name="quest_all">Всё</string>
     <!-- weapon -->
+    <string name="weapon_main_att">\nГлавный аттрибут</string>
+    <string name="weapon_main_att_h">Главный аттрибут</string>
+    <string name="weapon_min_damage">Оружие мин. повреждения</string>
+    <string name="weapon_max_damage">Оружие макс. повреждения</string>
+    <string name="weapon_att">Аттрибут на оружии</string>
+    <string name="weapon_portal_bonus">\nБонус портала</string>
+    <string name="weapon_portal_bonus_h">Бонус портала</string>
+    <string name="weapon_1">Оружие 1</string>
+    <string name="weapon_2">Оружие 2</string>
+    <string name="weapon_damage">Урон</string>
 
 </resources>

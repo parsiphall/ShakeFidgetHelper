@@ -1,14 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".fragment.UnlockFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.UnlockFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+    <LinearLayout
+        android:id="@+id/weapon_main_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/questText" />
+
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_min_damage" />
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_max_damage" />
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_att" />
+
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_damage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_1" />
+
+
+            <EditText
+                android:id="@+id/weapon1_min_damage"
+                style="@style/questEdit"
+                android:hint="@string/weapon_min_damage"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/weapon1_max_damage" />
+
+
+            <EditText
+                android:id="@+id/weapon1_max_damage"
+                style="@style/questEdit"
+                android:hint="@string/weapon_max_damage"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/weapon1_att" />
+
+            <EditText
+                android:id="@+id/weapon1_att"
+                style="@style/questEdit"
+                android:hint="@string/weapon_att"
+                android:imeOptions="actionDone" />
+
+
+            <TextView
+                android:id="@+id/weapon1_res"
+                style="@style/questText"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/questText"
+                android:text="@string/weapon_2" />
+
+            <EditText
+                android:id="@+id/weapon2_min_damage"
+                style="@style/questEdit"
+                android:hint="@string/weapon_min_damage"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/weapon2_max_damage" />
+
+
+            <EditText
+                android:id="@+id/weapon2_max_damage"
+                style="@style/questEdit"
+                android:hint="@string/weapon_max_damage"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/weapon2_att" />
+
+            <EditText
+                android:id="@+id/weapon2_att"
+                style="@style/questEdit"
+                android:hint="@string/weapon_att"
+                android:imeOptions="actionDone" />
+
+            <TextView
+                android:id="@+id/weapon2_res"
+                style="@style/questText"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weapon_ext_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weapon_main_table"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            style="@style/questText"
+            android:text="@string/weapon_main_att" />
+
+        <EditText
+            android:id="@+id/weapon_main_att"
+            style="@style/questEdit"
+            android:hint="@string/weapon_main_att_h"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@id/weapon_portal_bonus" />
+
+        <TextView
+            style="@style/questText"
+            android:text="@string/weapon_portal_bonus" />
+
+        <EditText
+            android:id="@+id/weapon_portal_bonus"
+            style="@style/questEdit"
+            android:hint="@string/weapon_portal_bonus_h" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weapon_ext_table"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/weapon_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_button" />
+
+        <Button
+            android:id="@+id/weapon_clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quest_clear" />
+    </LinearLayout>
+
+</RelativeLayout>
