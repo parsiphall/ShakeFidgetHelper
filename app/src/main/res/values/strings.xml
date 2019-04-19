@@ -57,8 +57,8 @@
     <string name="unlock_level_110">Уровень 110</string>
     <string name="unlock_level_110_1">Ключ от девятого подземелья</string>
     <!-- quest -->
-    <string name="quest_gold_text_view">Награда\n(серебро)</string>
-    <string name="quest_exp_text_view">\nОпыт</string>
+    <string name="quest_gold_text_view">Награда</string>
+    <string name="quest_exp_text_view">Опыт</string>
     <string name="quest_time_text_view">Время\n(ММ:СС)</string>
     <string name="quest_quest1_text_view">Задание 1</string>
     <string name="quest_quest2_text_view">Задание 2</string>
@@ -109,13 +109,15 @@
     <string name="dungeon_enemy_name">Имя: {0}</string>
     <string name="dungeon_level">Уровень: {0}</string>
     <string name="dungeon_class">Класс: {0}</string>
-    <string name="dungeon_health">Здоровье: {0}</string>
-    <string name="dungeon_strength">Сила: {0}</string>
-    <string name="dungeon_agility">Ловкость: {0}</string>
+    <string name="dungeon_health">Здор: {0}</string>
+    <string name="dungeon_strength">Сил: {0}</string>
+    <string name="dungeon_agility">Лов: {0}</string>
     <string name="dungeon_intellegence">Ум: {0}</string>
-    <string name="dungeon_vitality">Выносливость: {0}</string>
-    <string name="dungeon_luck">Удача: {0}</string>
+    <string name="dungeon_vitality">Вын: {0}</string>
+    <string name="dungeon_luck">Удч: {0}</string>
     <string name="dungeon_experience">Опыт: {0}</string>
+    <string name="nav_options">Настройки</string>
+    <string name="import_db">Import DB</string>
 
 
 </resources>

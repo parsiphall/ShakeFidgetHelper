@@ -13,7 +13,7 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -36,7 +36,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -52,27 +52,10 @@
 
                 <EditText
                     android:id="@+id/quest_q1_gold_g"
-                    style="@style/questEditTime"
+                    style="@style/questEdit"
                     android:hint="@string/quest_q_g_g"
                     android:imeOptions="actionNext"
-                    android:nextFocusForward="@id/quest_q1_gold_s" />
-
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_g"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/quest_q1_gold_s"
-                    style="@style/questEditTime"
-                    android:hint="@string/quest_q_g_s"
-                    android:imeOptions="actionNext"
                     android:nextFocusForward="@id/quest_q1_exp" />
-
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_s"
-                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -113,7 +96,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -129,27 +112,12 @@
 
                 <EditText
                     android:id="@+id/quest_q2_gold_g"
-                    style="@style/questEditTime"
+                    style="@style/questEdit"
                     android:hint="@string/quest_q_g_g"
-                    android:imeOptions="actionNext"
-                    android:nextFocusForward="@id/quest_q2_gold_s" />
-
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_g"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/quest_q2_gold_s"
-                    style="@style/questEditTime"
-                    android:hint="@string/quest_q_g_s"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@id/quest_q2_exp" />
 
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_s"
-                    android:textSize="15sp" />
+
             </LinearLayout>
 
             <EditText
@@ -189,7 +157,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
@@ -205,27 +173,11 @@
 
                 <EditText
                     android:id="@+id/quest_q3_gold_g"
-                    style="@style/questEditTime"
+                    style="@style/questEdit"
                     android:hint="@string/quest_q_g_g"
-                    android:imeOptions="actionNext"
-                    android:nextFocusForward="@id/quest_q3_gold_s" />
-
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_g"
-                    android:textSize="15sp" />
-
-                <EditText
-                    android:id="@+id/quest_q3_gold_s"
-                    style="@style/questEditTime"
-                    android:hint="@string/quest_q_g_s"
                     android:imeOptions="actionNext"
                     android:nextFocusForward="@id/quest_q3_exp" />
 
-                <TextView
-                    style="@style/questText"
-                    android:text="@string/quest_gold_s"
-                    android:textSize="15sp" />
             </LinearLayout>
 
             <EditText

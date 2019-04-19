@@ -32,6 +32,10 @@
                 android:id="@+id/nav_pets"
                 android:icon="@drawable/ic_menu_send"
                 android:title="@string/nav_pets"/>
+        <item
+                android:id="@+id/nav_options"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/nav_options"/>
     </group>
 
 </menu>

@@ -9,8 +9,8 @@ interface Dao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun addMonster(dungeonTable: DungeonTable)
 
-    @Query("SELECT * FROM dungeontable WHERE dungeonNumber = :dungeonNumber AND stageNumber = :stageNumber")
-    fun getMonsterInfo(dungeonNumber: Int, stageNumber: Int): DungeonTable
+    @Query("SELECT * FROM DungeonTable WHERE dungeonNumber LIKE :dungeonNumber")
+    fun getMonstersInfo(dungeonNumber: Int): List<DungeonTable>
 
     @Delete
     fun deleteMonster(dungeonTable: DungeonTable)

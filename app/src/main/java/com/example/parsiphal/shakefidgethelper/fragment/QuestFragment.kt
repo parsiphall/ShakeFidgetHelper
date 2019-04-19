@@ -49,9 +49,12 @@ class QuestFragment : Fragment() {
         val time1 = quest_q1_time_m.text.toString().toInt() * 60 + time1s
         val time2 = quest_q2_time_m.text.toString().toInt() * 60 + time2s
         val time3 = quest_q3_time_m.text.toString().toInt() * 60 + time3s
-        val gold1 = quest_q1_gold_g.text.toString().toInt() * 100 + quest_q1_gold_s.text.toString().toInt()
-        val gold2 = quest_q2_gold_g.text.toString().toInt() * 100 + quest_q2_gold_s.text.toString().toInt()
-        val gold3 = quest_q3_gold_g.text.toString().toInt() * 100 + quest_q3_gold_s.text.toString().toInt()
+        val gold1 = quest_q1_gold_g.text.toString().toFloat() * 100
+        val gold2 = quest_q2_gold_g.text.toString().toFloat() * 100
+        val gold3 = quest_q3_gold_g.text.toString().toFloat() * 100
+//        val gold1 = quest_q1_gold_g.text.toString().toInt() * 100 + quest_q1_gold_s.text.toString().toInt()
+//        val gold2 = quest_q2_gold_g.text.toString().toInt() * 100 + quest_q2_gold_s.text.toString().toInt()
+//        val gold3 = quest_q3_gold_g.text.toString().toInt() * 100 + quest_q3_gold_s.text.toString().toInt()
         val rew1 = gold1 / time1
         val rew2 = gold2 / time2
         val rew3 = gold3 / time3
@@ -90,19 +93,19 @@ class QuestFragment : Fragment() {
 
     private fun clear() {
         quest_q1_gold_g.text.clear()
-        quest_q1_gold_s.text.clear()
+//        quest_q1_gold_s.text.clear()
         quest_q1_exp.text.clear()
         quest_q1_time_m.text.clear()
         quest_q1_time_s.text.clear()
 
         quest_q2_gold_g.text.clear()
-        quest_q2_gold_s.text.clear()
+//        quest_q2_gold_s.text.clear()
         quest_q2_exp.text.clear()
         quest_q2_time_m.text.clear()
         quest_q2_time_s.text.clear()
 
         quest_q3_gold_g.text.clear()
-        quest_q3_gold_s.text.clear()
+//        quest_q3_gold_s.text.clear()
         quest_q3_exp.text.clear()
         quest_q3_time_m.text.clear()
         quest_q3_time_s.text.clear()
