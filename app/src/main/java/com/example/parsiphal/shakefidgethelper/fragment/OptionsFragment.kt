@@ -10,17 +10,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.parsiphal.shakefidgethelper.DB
 import com.example.parsiphal.shakefidgethelper.DB_NAME
 
 import com.example.parsiphal.shakefidgethelper.R
-import com.example.parsiphal.shakefidgethelper.date.DungeonTable
 import kotlinx.android.synthetic.main.fragment_options.*
 import kotlinx.coroutines.*
 import java.io.*
-import java.lang.Exception
-import java.net.HttpURLConnection
-import java.net.URL
 import java.nio.channels.FileChannel
 import java.util.*
 
@@ -38,30 +33,35 @@ class OptionsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         options_download_button.setOnClickListener {
-            downloadDB()
+            importDB()
         }
     }
 
     private fun importDB() = GlobalScope.launch {
-        delay(5000)
+        downloadDB().join()
         val sd =
             File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString())
         var source: FileChannel? = null
         var destination: FileChannel? = null
         val newDB = File(sd, "/$DB_NAME")
         val oldDB = File(context?.getDatabasePath(DB_NAME).toString())
-        try {
-            source = FileInputStream(newDB).channel
-            destination = FileOutputStream(oldDB).channel
-            destination!!.transferFrom(source, 0, source!!.size())
-            showToast(getString(R.string.DB_imported))
-            newDB.delete()
-        } catch (e: IOException) {
-            e.printStackTrace()
-            showToast(getString(R.string.error))
-        } finally {
-            source?.close()
-            destination?.close()
+        do {
+            delay(3000)
+        } while (!newDB.exists())
+        if (newDB.exists()) {
+            try {
+                source = FileInputStream(newDB).channel
+                destination = FileOutputStream(oldDB).channel
+                destination!!.transferFrom(source, 0, source!!.size())
+                showToast(getString(R.string.DB_imported))
+                newDB.delete()
+            } catch (e: IOException) {
+                e.printStackTrace()
+                showToast(getString(R.string.error))
+            } finally {
+                source?.close()
+                destination?.close()
+            }
         }
     }
 
@@ -70,10 +70,10 @@ class OptionsFragment : Fragment() {
         request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, DB_NAME)
         val manager = context!!.getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
         Objects.requireNonNull(manager).enqueue(request)
-        showToast(getString(R.string.DB_downloaded))
-        importDB().join()
+        showToast(getString(R.string.DB_downloading))
     }
 
+    @ExperimentalCoroutinesApi
     private fun showToast(message: String) = MainScope().launch {
         Toast.makeText(context, message, Toast.LENGTH_LONG).show()
     }

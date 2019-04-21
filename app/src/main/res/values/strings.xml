@@ -118,7 +118,7 @@
     <string name="dungeon_experience">Опыт: {0}</string>
     <string name="nav_options">Настройки</string>
     <string name="download_db">Скачать БД</string>
-    <string name="DB_downloaded">БД скачана</string>
+    <string name="DB_downloading">Скачивание БД</string>
     <string name="error">Ошибка</string>
     <string name="DB_imported">БД импортирована</string>
 
