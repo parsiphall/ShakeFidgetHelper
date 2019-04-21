@@ -104,7 +104,7 @@
     <string name="dungeon_14">Подземелье 14: Истерос</string>
     <string name="dungeon_15">Подземелье 15: Башня?</string>
     <string name="dungeon_16">Подземелье 16: Респектабельная школа магии</string>
-    <string name="dungeon_17">Подземелье 17: Портал демонов?</string>
+    <string name="dungeon_17">Подземелье 17: Hemorridor</string>
     <string name="dungeon_stage_number">Этаж: {0}</string>
     <string name="dungeon_enemy_name">Имя: {0}</string>
     <string name="dungeon_level">Уровень: {0}</string>
@@ -117,7 +117,10 @@
     <string name="dungeon_luck">Удч: {0}</string>
     <string name="dungeon_experience">Опыт: {0}</string>
     <string name="nav_options">Настройки</string>
-    <string name="import_db">Import DB</string>
+    <string name="download_db">Скачать БД</string>
+    <string name="DB_downloaded">БД скачана</string>
+    <string name="error">Ошибка</string>
+    <string name="DB_imported">БД импортирована</string>
 
 
 </resources>
